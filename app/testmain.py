@@ -1,8 +1,8 @@
 # main.py
 import pygame
 import sys
-from button import ImageButton
-from navigation import handle_navigation, update_button_states, handle_keydown_event  # Импортируем функции навигации
+from app.src.components.button import ImageButton
+from app.src.utils.navigation import handle_navigation, update_button_states, handle_keydown_event  # Импортируем функции навигации
 
 # Инициализация Pygame
 pygame.init()
@@ -13,8 +13,11 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("1984 BETA")
 
 # Создание кнопок
-beta_button = ImageButton(WIDTH / 2 - (280 / 2), 50, 150, 50, "", "Key.png", "Key_hover.png", "dydy.mp3.mp3")
-beta_button2 = ImageButton(WIDTH / 2 - (280 / 2), 110, 150, 50, "", "Key.png", "Key_hover.png", "netak-—-сделано-в-Clipchamp_1.mp3")
+beta_button = ImageButton(WIDTH / 2 - (280 / 2), 50, 150, 50, "", "assets/images/Key.png",
+                          "app/assets/images/Key_hover.png",
+                          "app/assets/sounds/dydy.mp3.mp3")
+beta_button2 = ImageButton(WIDTH / 2 - (280 / 2), 110, 150, 50, "", "assets/images/Key.png",
+                           "app/assets/images/Key_hover.png", "app/assets/video/netak-—-сделано-в-Clipchamp_1.mp3")
 
 # Список кнопок для навигации
 buttons = [beta_button, beta_button2]

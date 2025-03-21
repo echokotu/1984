@@ -1,7 +1,6 @@
 import pygame
 import sys
-from button import ImageButton
-from navigation import handle_navigation, update_button_states, handle_keydown_event
+from app.src.components.button import ImageButton
 
 pygame.init()
 
@@ -15,8 +14,11 @@ rect = pygame.Rect(40, 40, 120, 120)
 #beta_button = ImageButton(WIDTH/2-(252/2), 100, 252, 74 , "", "Key.png", "Key_hover.png", "dydy.mp3.mp3")
 #beta_button2 = ImageButton(WIDTH/2-(252/2), 200, 252, 74 , "", "Key.png", "Key_hover.png", "netak-—-сделано-в-Clipchamp_1.mp3")
 
-beta_button = ImageButton(WIDTH/2-(280/2), 50, 150, 50 , "", "Key.png", "Key_hover.png", "dydy.mp3.mp3")
-beta_button2 = ImageButton(WIDTH/2-(280/2), 110, 150, 50 , "", "Key.png", "Key_hover.png", "netak-—-сделано-в-Clipchamp_1.mp3")
+beta_button = ImageButton(WIDTH / 2 - (280/2), 50, 150, 50, "", "assets/images/Key.png",
+                          "app/assets/images/Key_hover.png",
+                          "app/assets/sounds/dydy.mp3.mp3")
+beta_button2 = ImageButton(WIDTH / 2 - (280/2), 110, 150, 50, "", "assets/images/Key.png",
+                           "app/assets/images/Key_hover.png", "app/assets/video/netak-—-сделано-в-Clipchamp_1.mp3")
 
 
 
